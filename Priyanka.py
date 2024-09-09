@@ -1,8 +1,8 @@
-name = input("Enter your name: ")
-print("Hello " + name)
-r = float(input("Enter the radius: "))
-import math
-area = math.pi * (r ** 2)
-print("Area = ", area)
+length = float(input("enter the length of the rectangle: "))
+width = float(input("enter the width of the rectangle: "))
+perimeter = 2 * (length + width)
+area = length * width
+print(" Perimeter of the rectangle is: ", perimeter)
+print(" Area of the rectangle is: ", area)
 
 
