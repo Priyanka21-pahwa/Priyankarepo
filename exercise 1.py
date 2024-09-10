@@ -1,15 +1,28 @@
 name = input("Enter your name: ")
 print("Hello " + name)
+
 r = float(input("Enter your radius: "))
 import math
 area = math.pi * (r **2)
 print("Area = ", area)
+
 l = float(input("Enter the length of the rectangle: "))
 w = float(input("Enter the width of the rectangle: "))
 perimeter = 2 *(l + w)
 area = l * w
 print("Perimeter = ", perimeter)
 print("Area = ", area)
+
+num1 = int(input("Enter first integer: "))
+num2 = int(input("Enter second integer: "))
+num3 = int(input("Enter third integer: "))
+sum_numbers = num1 + num2 + num3
+product_numbers = num1 * num2 * num3
+average_numbers = sum_numbers / 3
+print(" The sum of the numbers is: ", sum_numbers)
+print(" The product of the numbers is: ", product_numbers)
+print(" The average of the numbers is: ", average_numbers)
+
 LOT_TO_GRAM = 13.3
 POUND_TO_GRAM = 32
 TALENT_TO_POUND = 20
@@ -22,16 +35,19 @@ total_grams = total_lots * LOT_TO_GRAM
 kilograms = int(total_grams / GRAM_IN_KILOGRAM)
 grams = total_grams % GRAM_IN_KILOGRAM
 print(f"The weight in modern units: {kilograms: } kilograms and {grams} grams.")
+
 n = []
 for num in range(0,9):
     num = str(num).zfill(3)
     print(num)
     n.append(num)
+
     n1 = []
     for num in range (1,6):
         num = str(num).zfill(4)
         print(num)
         ni.append(num)
+
         length = float(input("Enter the length of the zander in centimeters"))
         size_limit = 42
         if length >= size_limit:
@@ -39,6 +55,7 @@ for num in range(0,9):
         else:
             diffrence = length - size_limit
             print(f"The zander is {diffrence: .1f} centimeters below the size limit. Please release it back into the lake.")
+
 cabin_class = input("Enter the cabin class (LUX, A,B,C): ").upper()
 if cabin_class == "LUX":
     print("LUX: upper-deck cabin with a balcony.")
@@ -50,6 +67,7 @@ if cabin_class == "C":
     print("C: windowless cabin below the car deck.")
 else:
     print("Invalid cabin class.")
+
     gender = input("Enter your biological gender (male/female): ").lower()
     hemoglobin_value = float(input("Enter your hemoglobin value (g/l): "))
     if gender == "female":
@@ -68,6 +86,7 @@ else:
                 print("Your hemoglobin value is high.")
             else:
             print("Invalid gender entered.")
+
             year = int(input("Enter year: "))
             if (year % 4 == 0 and year % 100 != 0 or year % 400 == 0):
                 print(f"{year} is a leap year.")
